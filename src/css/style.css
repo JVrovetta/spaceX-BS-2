@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  font-family: Rubik;
+  color: #ffffff;
+}
+
+.container00 {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.header .logoPc {
+  width: 15rem;
+  margin: 0 2.5rem 0 -0.625rem;
+}
+.header .navItem:hover {
+  text-decoration: underline;
+}
+
+.titleContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+}
+
+.arrowDown {
+  display: inline-block;
+  width: 5rem;
+  margin: 0.25rem 0 0 0;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 14px;
+  width: 164px;
+  padding: 15px 0;
+  border-radius: 0;
+  border-width: 2px;
+}
+
+.emailLink {
+  text-decoration: none;
+  color: #ffffff;
+}
+.emailLink:hover {
+  color: #b9b9b9;
+}
+
+.downloadDescPosition {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 88vh;
+  background-color: #000000;
+}
+.downloadDescPosition .downloadDesc p {
+  color: #555252;
+}
+.downloadDescPosition .downloadDesc .button {
+  width: 225px;
+  margin: 10px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  height: 12vh;
+  background-color: #000000;
+}
+.footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer a:hover {
+  color: #b9b9b9;
+}
+.footer .copyFooter {
+  color: #555252;
+}
+
+@media (max-width: 405px) {
+  .header .logoPc {
+    width: 180px;
+    margin-top: 15px;
+  }
+  .footer {
+    font-size: 10px;
+  }
+}
+@media (max-width: 350px) {
+  .header .logoPc {
+    width: 145px;
+    margin-top: 15px;
+  }
+}
+.container00.container01 {
+  background-image: url(../imgs/home/1.jpg);
+}
+.container00.container01 .titlePadding {
+  top: 45vh;
+}
+.container00.container02 {
+  background-image: url(../imgs/home/2.jpg);
+}
+.container00.container03 {
+  background-image: url(../imgs/home/3.jpeg);
+}
+.container00.container04 {
+  background-image: url(../imgs/home/4.jpg);
+}
+
+.titlePadding {
+  position: relative;
+  top: 60vh;
+}
+
+.shortTitle {
+  width: 30rem;
+  margin: 0 0 -1.56rem 0;
+}
+
+.mediumTitle {
+  width: 40rem;
+  margin: 0 0 -25rem 0;
+}
+
+@media (max-width: 750px) {
+  .titlePadding {
+    top: 70vh;
+  }
+  .shortTitle,
+  .mediumTitle {
+    width: auto;
+  }
+}
+.container00.container05 {
+  background-image: url(../imgs/falcon9/f9_1.jpg);
+}
+.container00.container06 {
+  background-image: url(../imgs/falcon9/02.jpg);
+  background-position: left;
+}
+.container00.carousel01 {
+  background-image: url(../imgs/falcon9/03.jpg);
+  background-position: left;
+}
+.container00.carousel02 {
+  background-image: url(../imgs/falcon9/04.jpg);
+  background-position: left;
+}
+.container00.carousel03 {
+  background-image: url(../imgs/falcon9/06.jpg);
+  background-position: left;
+}
+.container00.carousel04 {
+  background-image: url(../imgs/falcon9/05.jpg);
+  background-position: left;
+}
+.container00.carousel05 {
+  background-image: url(../imgs/falcon9/07.jpg);
+  background-position: left;
+}
+.container00.container07 {
+  background-image: url(../imgs/falcon9/08.jpg);
+  background-position: left;
+}
+
+.titleContent .titleFalcon9 {
+  font-size: 100px;
+  font-weight: 500;
+}
+.titleContent .subtitleFalcon9 {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 40vh;
+  background-color: #000000;
+}
+.numbers .titleNumb {
+  font-size: 90px;
+  margin-bottom: -15px;
+}
+.numbers .subtitleNumb {
+  font-size: 20px;
+}
+
+.falcon9DescPosition {
+  display: grid;
+  height: 90vh;
+  align-items: center;
+}
+.falcon9DescPosition .falcon9Desc {
+  max-width: 540px;
+}
+
+.overviewPosition {
+  display: grid;
+  align-items: center;
+  height: 90vh;
+  max-width: 450px;
+  margin-left: 12%;
+}
+.overviewPosition .overview .darkerText {
+  color: #c8c8c8;
+}
+
+.carouselSlide img {
+  height: 92vh;
+  object-fit: cover;
+}
+.carouselSlide .carouselTextContainer {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+  padding: 0 10px;
+  background-color: #000000;
+}
+.carouselSlide .carouselText {
+  margin: 0;
+}
+
+@media (max-width: 580px) {
+  .titleContent .titleFalcon9 {
+    font-size: 50px;
+    font-weight: 500;
+  }
+  .titleContent .subtitleFalcon9 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .overviewPosition {
+    margin: 0 auto;
+  }
+  #falcon9Carousel .carouselControl {
+    opacity: 0;
+  }
+}
+.container00.container08 {
+  background-image: url(../imgs/humanFlight/01.webp);
+}
+.container00.container09 {
+  background-image: url(../imgs/humanFlight/02.jpg);
+}
+.container00.container10 {
+  background-image: url(../imgs/humanFlight/03.jpg);
+}
+.container00.container11 {
+  background-image: url(../imgs/humanFlight/04.jpg);
+}
+.container00.container12 {
+  background-image: url(../imgs/humanFlight/05.jpg);
+}
+
+.titleContent .titleHuman {
+  font-size: 80px;
+}
+.titleContent .subtitleHuman {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.humanSpaceDesc {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  background-color: #000000;
+}
+.humanSpaceDesc p {
+  font-size: 18px;
+  max-width: 800px;
+  color: #c8c8c8;
+}
+
+.sectionPosition {
+  display: grid;
+  height: 100vh;
+  align-items: center;
+}
+.sectionPosition .sectionContent {
+  max-width: 50%;
+}
+.sectionPosition .sectionContent.rightContent {
+  margin-left: 55%;
+}
+.sectionPosition .sectionContent .sectionHeadTitle {
+  font-weight: 300;
+}
+.sectionPosition .sectionContent .sectionTitle {
+  font-size: 60px;
+  font-weight: 500;
+}
+.sectionPosition .sectionContent .sectionSubtitle {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 760px) {
+  .titleContent .titleHuman {
+    font-size: 60px;
+  }
+  .titleContent .subtitleHuman {
+    font-size: 16px;
+  }
+  .sectionPosition .sectionContent {
+    max-width: 70%;
+    text-align: center;
+  }
+}
+@media (max-width: 460px) {
+  .titleContent .titleHuman {
+    font-size: 40px;
+  }
+  .sectionPosition .sectionContent {
+    max-width: 100%;
+    text-align: center;
+  }
+  .sectionPosition .sectionContent.rightContent {
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

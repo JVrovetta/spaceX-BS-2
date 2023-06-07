@@ -1,0 +1,120 @@
+.container00 {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header {
+  font-size: 0.8rem;
+  font-weight: bold;
+
+  .logoPc {
+    width: 15rem;
+    margin: 0 2.5rem 0 -0.625rem
+  }
+
+  .navItem {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+}
+
+.titleContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+}
+
+.arrowDown {
+  display: inline-block;
+  width: 5rem;
+  margin: 0.25rem 0 0 0;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 14px;
+  width: 164px;
+  padding: $button-padding;
+  border-radius: 0;
+  border-width: 2px;
+}
+
+.emailLink {
+  text-decoration: none;
+  color: #ffffff;
+
+  &:hover {
+    color: $link-hover;
+  }
+}
+
+.downloadDescPosition {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 88vh;
+  background-color: #000000;
+
+  .downloadDesc {
+    p {
+      color: $copy-color;
+    }
+
+    .button {
+      width: 225px;
+      margin: 10px;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  height: 12vh;
+  background-color: #000000;
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+
+    &:hover {
+      color: $link-hover;
+    }
+  }
+
+  .copyFooter {
+    color: $copy-color;
+  }
+}
+
+// Media query
+
+@media (max-width: 405px) {
+  .header {
+    .logoPc {
+      width: 180px;
+      margin-top: 15px;
+    }
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .header {
+    .logoPc {
+      width: 145px;
+      margin-top: 15px;
+    }
+  }
+}
