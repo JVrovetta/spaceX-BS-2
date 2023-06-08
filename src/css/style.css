@@ -32,8 +32,8 @@
 
 .arrowDown {
   display: inline-block;
-  width: 5rem;
-  margin: 0.25rem 0 0 0;
+  width: 120px;
+  margin-top: 50px;
 }
 
 .button {
@@ -107,7 +107,7 @@
   background-image: url(../imgs/home/1.jpg);
 }
 .container00.container01 .titlePadding {
-  top: 45vh;
+  padding-top: 60vh;
 }
 .container00.container02 {
   background-image: url(../imgs/home/2.jpg);
@@ -120,8 +120,7 @@
 }
 
 .titlePadding {
-  position: relative;
-  top: 60vh;
+  padding-top: 70vh;
 }
 
 .shortTitle {
