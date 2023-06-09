@@ -1,0 +1,10 @@
+[
+  {
+    "content": "<p>Made of a carbon composite material, the fairing protects satellites on their way to orbit. The fairing is jettisoned approximately 3 minutes into flight, and SpaceX continues to recover fairings for reuse on future missions.</p><table class='table'><tbody><tr><td>HEIGHT</td><td class='text-end'>13.1 m <span class='darkerText'>/ 43 ft</span></td></tr><tr><td>DIAMETER</td><td class='text-end'>5.2 m <span class='darkerText'>/ 17.1 ft</span></td></tr></tbody></table>",
+    "bgClassNum": "0"
+  },
+  {
+    "content": "<p>Dragon is capable of carrying up to 7 people and/or cargo in the spacecraft’s pressurized section. In addition, Dragon can carry cargo in the spacecraft’s unpressurized trunk, which can also accommodate secondary payloads.</p><table class='table'><tbody><tr><td>HEIGHT</td><td class='text-end'>8.1 m <span class='darkerText'>/ 26.6 ft</span></td></tr><tr><td>DIAMETER</td><td class='text-end'>3.7 m <span class='darkerText'>/ 12 ft</span></td></tr></tbody></table>",
+    "bgClassNum": "1"
+  }
+]

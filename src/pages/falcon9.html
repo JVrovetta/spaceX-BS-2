@@ -129,15 +129,31 @@
           </div>
         </div>
       </div>
-      <div class="carousel-item container00 carousel02" data-bs-interval="500000">
+      <div class="carousel-item container00 carousel02 tab0" data-ct-bgtarget="firstStageContentTabs"
+        data-bs-interval="500000">
         <div class="overviewPosition">
           <div class="container overview">
             <p class="subtitleOverview">FALCON 9</p>
             <p class="h3 titleOverview">FIRST STAGE</p>
-            <p>Falcon 9's first stage incorporates nine Merlin engines and aluminum-lithium alloy tanks containing
-              liquid
-              oxygen and rocket-grade kerosene (RP-1) propellant.</p>
-            <p>Falcon 9 generates more than 1.7 million pounds of thrust at sea level.</p>
+            <ul class="nav contentTabs" id="firstStageContentTabs"
+              data-ct-data="../data/falcon9/firstStageTabsData.json">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" role="button" data-ct-tab="0">OVERVIEW</a>
+              </li>
+              <span>|</span>
+              <li class="nav-item">
+                <a class="nav-link" role="button" data-ct-tab="1">ENGINES</a>
+              </li>
+              <span>|</span>
+              <li class="nav-item">
+                <a class="nav-link" role="button" data-ct-tab="2">LANDING LEGS</a>
+              </li>
+            </ul>
+            <div class="contentOverview" data-ct-contenttarget="firstStageContentTabs">
+              <p>Falcon 9's first stage incorporates nine Merlin engines and aluminum-lithium alloy tanks containing
+                liquid oxygen and rocket-grade kerosene (RP-1) propellant.</p>
+              <p>Falcon 9 generates more than 1.7 million pounds of thrust at sea level.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -185,28 +201,38 @@
           </div>
         </div>
       </div>
-      <div class="carousel-item container00 carousel05" data-bs-interval="500000">
+      <div class="carousel-item container00 carousel05 tab0" data-ct-bgtarget="payloadContentTabs"
+        data-bs-interval="500000">
         <div class="overviewPosition">
           <div class="container overview">
             <p class="subtitleOverview">FALCON 9</p>
             <p class="h3 titleOverview">PAYLOAD</p>
-            <p>Made of a carbon composite material, the fairing protects satellites on their way to orbit. The fairing
-              is
-              jettisoned approximately 3 minutes into flight, and SpaceX continues to recover fairings for reuse on
-              future
-              missions.</p>
-            <table class="table">
-              <tbody>
-                <tr>
-                  <td>HEIGHT</td>
-                  <td class="text-end">13.1 m <span class="darkerText">/ 43 ft</span></td>
-                </tr>
-                <tr>
-                  <td>DIAMETER</td>
-                  <td class="text-end">5.2 m <span class="darkerText">/ 17.1 ft</span></td>
-                </tr>
-              </tbody>
-            </table>
+            <ul class="nav contentTabs" id="payloadContentTabs" data-ct-data="../data/falcon9/payloadTabsData.json">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" role="button" data-ct-tab="0">FAIRING</a>
+              </li>
+              <span>|</span>
+              <li class="nav-item">
+                <a class="nav-link" role="button" data-ct-tab="1">DRAGON</a>
+              </li>
+            </ul>
+            <div class="contentOverview" data-ct-contenttarget="payloadContentTabs">
+              <p>Made of a carbon composite material, the fairing protects satellites on their way to orbit. The fairing
+                is jettisoned approximately 3 minutes into flight, and SpaceX continues to recover fairings for reuse on
+                future missions.</p>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>HEIGHT</td>
+                    <td class="text-end">13.1 m <span class="darkerText">/ 43 ft</span></td>
+                  </tr>
+                  <tr>
+                    <td>DIAMETER</td>
+                    <td class="text-end">5.2 m <span class="darkerText">/ 17.1 ft</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -359,6 +385,8 @@
   <script>
     AOS.init();
   </script>
+  <!-- Personal Script -->
+  <script src="../js/build/falcon9.js" type="module"></script>
 </body>
 
 </html>

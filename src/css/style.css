@@ -4,6 +4,10 @@
   color: #ffffff;
 }
 
+body {
+  background-color: #000000;
+}
+
 .container00 {
   min-height: 100vh;
   background-size: cover;
@@ -58,7 +62,6 @@
   align-items: center;
   justify-content: center;
   height: 88vh;
-  background-color: #000000;
 }
 .downloadDescPosition .downloadDesc p {
   color: #555252;
@@ -75,7 +78,6 @@
   font-size: 0.75rem;
   font-weight: 500;
   height: 12vh;
-  background-color: #000000;
 }
 .footer a {
   text-decoration: none;
@@ -154,8 +156,16 @@
   background-position: left;
 }
 .container00.carousel02 {
-  background-image: url(../imgs/falcon9/f9carousel02.jpg);
   background-position: left;
+}
+.container00.carousel02.tab0 {
+  background-image: url(../imgs/falcon9/f9carousel02_0.jpg);
+}
+.container00.carousel02.tab1 {
+  background-image: url(../imgs/falcon9/f9carousel02_1.jpg);
+}
+.container00.carousel02.tab2 {
+  background-image: url(../imgs/falcon9/f9carousel02_2.jpg);
 }
 .container00.carousel03 {
   background-image: url(../imgs/falcon9/f9carousel03.jpg);
@@ -166,8 +176,13 @@
   background-position: left;
 }
 .container00.carousel05 {
-  background-image: url(../imgs/falcon9/f9carousel05.jpg);
   background-position: left;
+}
+.container00.carousel05.tab0 {
+  background-image: url(../imgs/falcon9/f9carousel05_0.jpg);
+}
+.container00.carousel05.tab1 {
+  background-image: url(../imgs/falcon9/f9carousel05_1.jpg);
 }
 .container00.container07 {
   background-image: url(../imgs/falcon9/f9Container07.jpg);
@@ -189,7 +204,6 @@
   flex-direction: column;
   justify-content: center;
   min-height: 40vh;
-  background-color: #000000;
 }
 .numbers .titleNumb {
   font-size: 90px;
@@ -218,6 +232,24 @@
 .overviewPosition .overview .darkerText {
   color: #c8c8c8;
 }
+.overviewPosition .overview .contentTabs {
+  margin-bottom: 8px;
+}
+.overviewPosition .overview .contentTabs .nav-link {
+  padding-left: 0;
+  padding-right: 10px;
+  color: #555252;
+}
+.overviewPosition .overview .contentTabs .nav-link:hover {
+  color: #ffffff;
+}
+.overviewPosition .overview .contentTabs .nav-link.active {
+  color: #ffffff;
+}
+.overviewPosition .overview .contentTabs span {
+  padding: 8px 10px 8px 0;
+  color: #555252;
+}
 
 .carouselSlide img {
   height: 92vh;
@@ -229,7 +261,6 @@
   width: 100%;
   height: 8vh;
   padding: 0 10px;
-  background-color: #000000;
 }
 .carouselSlide .carouselText {
   margin: 0;
@@ -281,7 +312,6 @@
   align-items: center;
   justify-content: center;
   height: 25vh;
-  background-color: #000000;
 }
 .humanSpaceDesc p {
   font-size: 18px;
