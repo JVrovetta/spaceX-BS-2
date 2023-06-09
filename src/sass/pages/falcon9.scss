@@ -14,8 +14,19 @@
   }
 
   &.carousel02 {
-    background-image: url(../imgs/falcon9/f9carousel02.jpg);
     background-position: left;
+
+    &:has(.overviewTab.active) {
+      background-image: url(../imgs/falcon9/f9carousel02_0.jpg);
+    }
+
+    &:has(.enginesTab.active) {
+      background-image: url(../imgs/falcon9/f9carousel02_1.jpg);
+    }
+
+    &:has(.landingLegsTab.active) {
+      background-image: url(../imgs/falcon9/f9carousel02_2.jpg);
+    }
   }
 
   &.carousel03 {
@@ -29,8 +40,15 @@
   }
 
   &.carousel05 {
-    background-image: url(../imgs/falcon9/f9carousel05.jpg);
     background-position: left;
+
+    &:has(.fairingTab.active) {
+      background-image: url(../imgs/falcon9/f9carousel05_0.jpg);
+    }
+
+    &:has(.dragonTab.active) {
+      background-image: url(../imgs/falcon9/f9carousel05_1.jpg);
+    }
   }
 
   &.container07 {
@@ -57,7 +75,6 @@
   flex-direction: column;
   justify-content: center;
   min-height: 40vh;
-  background-color: #000000;
 
   .titleNumb {
     font-size: 90px;
@@ -90,6 +107,29 @@
     .darkerText {
       color: $table-item;
     }
+
+    .contentTabs {
+      margin-bottom: 8px;
+
+      .nav-link {
+        padding-left: 0;
+        padding-right: 10px;
+        color: $copy-color;
+
+        &:hover {
+          color: #ffffff;
+        }
+
+        &.active {
+          color: #ffffff;
+        }
+      }
+
+      span {
+        padding: 8px 10px 8px 0;
+        color: $copy-color;
+      }
+    }
   }
 }
 
@@ -105,7 +145,6 @@
     width: 100%;
     height: 8vh;
     padding: 0 10px;
-    background-color: #000000;
   }
 
   .carouselText {
