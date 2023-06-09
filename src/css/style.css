@@ -1,6 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+@font-face {
+  src: url("../fonts/D-DIN.otf");
+  font-family: "D-DIN";
+  font-weight: 400;
+}
+@font-face {
+  src: url("../fonts/D-DIN-Bold.otf");
+  font-family: "D-DIN";
+  font-weight: 500;
+}
 * {
-  font-family: Rubik;
+  font-family: "D-DIN";
   color: #ffffff;
 }
 
@@ -16,12 +25,12 @@ body {
 }
 
 .header {
-  font-size: 0.8rem;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 500;
 }
 .header .logoPc {
   width: 15rem;
-  margin: 0 2.5rem 0 -0.625rem;
+  margin: 0 40px 0 -10px;
 }
 .header .navItem:hover {
   text-decoration: underline;
@@ -64,6 +73,7 @@ body {
   height: 88vh;
 }
 .downloadDescPosition .downloadDesc p {
+  font-weight: 400;
   color: #555252;
 }
 .downloadDescPosition .downloadDesc .button {
@@ -75,7 +85,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.75rem;
+  font-size: 12px;
   font-weight: 500;
   height: 12vh;
 }
@@ -226,11 +236,35 @@ body {
   display: grid;
   align-items: center;
   height: 90vh;
-  max-width: 450px;
+  max-width: 500px;
   margin-left: 12%;
 }
+.overviewPosition .overview .titleOverview {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+.overviewPosition .overview .subtitleOverview {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.overviewPosition .overview .midleTitleOverview {
+  font-size: 20px;
+  font-weight: 400;
+}
+.overviewPosition .overview .table {
+  font-weight: 500;
+  border-collapse: separate;
+  border-bottom-color: #555252;
+}
+.overviewPosition .overview .table td {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 0;
+  padding-right: 0;
+}
 .overviewPosition .overview .darkerText {
-  color: #c8c8c8;
+  color: #b3b3b3;
+  font-weight: 400;
 }
 .overviewPosition .overview .contentTabs {
   margin-bottom: 8px;
@@ -316,7 +350,7 @@ body {
 .humanSpaceDesc p {
   font-size: 18px;
   max-width: 800px;
-  color: #c8c8c8;
+  color: #b3b3b3;
 }
 
 .sectionPosition {
