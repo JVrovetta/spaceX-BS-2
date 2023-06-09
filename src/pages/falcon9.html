@@ -134,10 +134,58 @@
           <div class="container overview">
             <p class="subtitleOverview">FALCON 9</p>
             <p class="h3 titleOverview">FIRST STAGE</p>
-            <p>Falcon 9's first stage incorporates nine Merlin engines and aluminum-lithium alloy tanks containing
-              liquid
-              oxygen and rocket-grade kerosene (RP-1) propellant.</p>
-            <p>Falcon 9 generates more than 1.7 million pounds of thrust at sea level.</p>
+            <ul class="nav contentTabs" id="firstStageTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link overviewTab active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview"
+                  type="button" role="tab" aria-controls="overview" aria-selected="true">OVERVIEW</a>
+              </li>
+              <span>|</span>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link enginesTab" id="engines-tab" data-bs-toggle="tab" data-bs-target="#engines"
+                  type="button" role="tab" aria-controls="engines" aria-selected="false">ENGINES</a>
+              </li>
+              <span>|</span>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link landingLegsTab" id="landingLegs-tab" data-bs-toggle="tab"
+                  data-bs-target="#landingLegs" type="button" role="tab" aria-controls="landingLegs"
+                  aria-selected="false">LANDING LEGS</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="firstStageTabContent">
+              <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="home-tab">
+                <p>Falcon 9's first stage incorporates nine Merlin engines and aluminum-lithium alloy tanks containing
+                  liquid oxygen and rocket-grade kerosene (RP-1) propellant.</p>
+                <p>Falcon 9 generates more than 1.7 million pounds of thrust at sea level.</p>
+              </div>
+              <div class="tab-pane fade" id="engines" role="tabpanel" aria-labelledby="profile-tab">
+                <p>The nine Merlin engines on the first stage are gradually throttled near the end of first-stage flight
+                  to limit launch vehicle acceleration as the rocket’s mass decreases with the burning of fuel. These
+                  engines are also used to reorient the first stage prior to reentry and to decelerate the vehicle for
+                  landing.</p>
+                <table class='table'>
+                  <tbody>
+                    <tr>
+                      <td>NUMBER OF ENGINES</td>
+                      <td class='text-end'>9</td>
+                    </tr>
+                    <tr>
+                      <td>THRUST AT SEA LEVEL</td>
+                      <td class='text-end'>7,607 kN <span class='darkerText'>/ 1,710,000 lbf</span></td>
+                    </tr>
+                    <tr>
+                      <td>THRUST IN VACUUM</td>
+                      <td class='text-end'>8,227 kN <span class='darkerText'>/ 1,849,500 lbf</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tab-pane fade" id="landingLegs" role="tabpanel" aria-labelledby="profile-tab">
+                <p>The Falcon 9 first stage is equipped with four landing legs made of state-of-the-art carbon fiber
+                  with aluminum honeycomb.</p>
+                <p>Placed symmetrically around the base of the rocket, they are stowed at the base of the vehicle and
+                  deploy just prior to landing.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -190,23 +238,53 @@
           <div class="container overview">
             <p class="subtitleOverview">FALCON 9</p>
             <p class="h3 titleOverview">PAYLOAD</p>
-            <p>Made of a carbon composite material, the fairing protects satellites on their way to orbit. The fairing
-              is
-              jettisoned approximately 3 minutes into flight, and SpaceX continues to recover fairings for reuse on
-              future
-              missions.</p>
-            <table class="table">
-              <tbody>
-                <tr>
-                  <td>HEIGHT</td>
-                  <td class="text-end">13.1 m <span class="darkerText">/ 43 ft</span></td>
-                </tr>
-                <tr>
-                  <td>DIAMETER</td>
-                  <td class="text-end">5.2 m <span class="darkerText">/ 17.1 ft</span></td>
-                </tr>
-              </tbody>
-            </table>
+            <ul class="nav contentTabs" id="payloadTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link fairingTab active" id="fairing-tab" data-bs-toggle="tab" data-bs-target="#fairing"
+                  type="button" role="tab" aria-controls="home" aria-selected="true">FAIRING</a>
+              </li>
+              <span>|</span>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link dragonTab" id="dragon-tab" data-bs-toggle="tab" data-bs-target="#dragon"
+                  type="button" role="tab" aria-controls="profile" aria-selected="false">DRAGON</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="payloadTabContent">
+              <div class="tab-pane fade show active" id="fairing" role="tabpanel" aria-labelledby="home-tab">
+                <p>Made of a carbon composite material, the fairing protects satellites on their way to orbit. The
+                  fairing is jettisoned approximately 3 minutes into flight, and SpaceX continues to recover fairings
+                  for reuse on future missions.</p>
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>HEIGHT</td>
+                      <td class="text-end">13.1 m <span class="darkerText">/ 43 ft</span></td>
+                    </tr>
+                    <tr>
+                      <td>DIAMETER</td>
+                      <td class="text-end">5.2 m <span class="darkerText">/ 17.1 ft</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tab-pane fade" id="dragon" role="tabpanel" aria-labelledby="profile-tab">
+                <p>Dragon is capable of carrying up to 7 people and/or cargo in the spacecraft’s pressurized section. In
+                  addition, Dragon can carry cargo in the spacecraft’s unpressurized trunk, which can also accommodate
+                  secondary payloads.</p>
+                <table class='table'>
+                  <tbody>
+                    <tr>
+                      <td>HEIGHT</td>
+                      <td class='text-end'>8.1 m <span class='darkerText'>/ 26.6 ft</span></td>
+                    </tr>
+                    <tr>
+                      <td>DIAMETER</td>
+                      <td class='text-end'>3.7 m <span class='darkerText'>/ 12 ft</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
