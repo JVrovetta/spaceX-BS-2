@@ -10,7 +10,9 @@
 }
 * {
   font-family: "D-DIN";
+  letter-spacing: 0.03rem;
   color: #ffffff;
+  text-shadow: 0 0 2px #555;
 }
 
 body {
@@ -34,6 +36,7 @@ body {
 }
 .header .navItem:hover {
   text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .titleContent {
@@ -134,39 +137,32 @@ body {
 .titlePadding {
   padding-top: 70vh;
 }
-
-.shortTitle {
-  width: 30rem;
-  margin: 0 0 -1.56rem 0;
+.titlePadding .topSubtitle {
+  font-size: 20px;
+  font-weight: 400;
 }
-
-.mediumTitle {
-  width: 40rem;
-  margin: 0 0 -25rem 0;
+.titlePadding .shortTitle {
+  font-size: 48px;
+  max-width: 480px;
+  margin: 0 0 -25px 0;
 }
 
 @media (max-width: 750px) {
-  .titlePadding {
-    top: 70vh;
+  .titlePadding .shortTitle {
+    font-size: 36px;
   }
-  .shortTitle,
-  .mediumTitle {
-    width: auto;
-  }
+}
+.container00.container06, .container00.carousel01, .container00.carousel02, .container00.carousel03, .container00.carousel04, .container00.carousel05, .container00.container07 {
+  background-position: left;
 }
 .container00.container05 {
   background-image: url(../imgs/falcon9/f9Container05.jpg);
 }
 .container00.container06 {
   background-image: url(../imgs/falcon9/f9Container06.jpg);
-  background-position: left;
 }
 .container00.carousel01 {
   background-image: url(../imgs/falcon9/f9carousel01.jpg);
-  background-position: left;
-}
-.container00.carousel02 {
-  background-position: left;
 }
 .container00.carousel02:has(.overviewTab.active) {
   background-image: url(../imgs/falcon9/f9carousel02_0.jpg);
@@ -179,14 +175,9 @@ body {
 }
 .container00.carousel03 {
   background-image: url(../imgs/falcon9/f9carousel03.jpg);
-  background-position: left;
 }
 .container00.carousel04 {
   background-image: url(../imgs/falcon9/f9carousel04.jpg);
-  background-position: left;
-}
-.container00.carousel05 {
-  background-position: left;
 }
 .container00.carousel05:has(.fairingTab.active) {
   background-image: url(../imgs/falcon9/f9carousel05_0.jpg);
@@ -196,7 +187,6 @@ body {
 }
 .container00.container07 {
   background-image: url(../imgs/falcon9/f9Container07.jpg);
-  background-position: left;
 }
 
 .titleContent .titleFalcon9 {
@@ -221,15 +211,6 @@ body {
 }
 .numbers .subtitleNumb {
   font-size: 20px;
-}
-
-.falcon9DescPosition {
-  display: grid;
-  height: 90vh;
-  align-items: center;
-}
-.falcon9DescPosition .falcon9Desc {
-  max-width: 540px;
 }
 
 .overviewPosition {
@@ -263,7 +244,7 @@ body {
   padding-right: 0;
 }
 .overviewPosition .overview .darkerText {
-  color: #b3b3b3;
+  color: #c0c0c0;
   font-weight: 400;
 }
 .overviewPosition .overview .contentTabs {
@@ -300,6 +281,11 @@ body {
   margin: 0;
 }
 
+@media (max-width: 950px) {
+  .container00.container06, .container00.carousel01, .container00.carousel02, .container00.carousel03, .container00.carousel04, .container00.carousel05, .container00.container07 {
+    background-position: center;
+  }
+}
 @media (max-width: 580px) {
   .titleContent .titleFalcon9 {
     font-size: 50px;
@@ -311,6 +297,9 @@ body {
   }
   .overviewPosition {
     margin: 0 auto;
+  }
+  .overviewPosition .overview .darkerText {
+    color: #eeeeee;
   }
   #falcon9Carousel .carouselControl {
     opacity: 0;
@@ -350,7 +339,7 @@ body {
 .humanSpaceDesc p {
   font-size: 18px;
   max-width: 800px;
-  color: #b3b3b3;
+  color: #c0c0c0;
 }
 
 .sectionPosition {

@@ -1,21 +1,28 @@
 .container00 {
+
+  &.container06,
+  &.carousel01,
+  &.carousel02,
+  &.carousel03,
+  &.carousel04,
+  &.carousel05,
+  &.container07 {
+    background-position: left;
+  }
+
   &.container05 {
     background-image: url(../imgs/falcon9/f9Container05.jpg);
   }
 
   &.container06 {
     background-image: url(../imgs/falcon9/f9Container06.jpg);
-    background-position: left;
   }
 
   &.carousel01 {
     background-image: url(../imgs/falcon9/f9carousel01.jpg);
-    background-position: left;
   }
 
   &.carousel02 {
-    background-position: left;
-
     &:has(.overviewTab.active) {
       background-image: url(../imgs/falcon9/f9carousel02_0.jpg);
     }
@@ -31,17 +38,13 @@
 
   &.carousel03 {
     background-image: url(../imgs/falcon9/f9carousel03.jpg);
-    background-position: left;
   }
 
   &.carousel04 {
     background-image: url(../imgs/falcon9/f9carousel04.jpg);
-    background-position: left;
   }
 
   &.carousel05 {
-    background-position: left;
-
     &:has(.fairingTab.active) {
       background-image: url(../imgs/falcon9/f9carousel05_0.jpg);
     }
@@ -53,7 +56,6 @@
 
   &.container07 {
     background-image: url(../imgs/falcon9/f9Container07.jpg);
-    background-position: left;
   }
 }
 
@@ -83,16 +85,6 @@
 
   .subtitleNumb {
     font-size: 20px;
-  }
-}
-
-.falcon9DescPosition {
-  display: grid;
-  height: 90vh;
-  align-items: center;
-
-  .falcon9Desc {
-    max-width: 540px;
   }
 }
 
@@ -182,6 +174,21 @@
   }
 }
 
+@media (max-width: 950px) {
+  .container00 {
+
+    &.container06,
+    &.carousel01,
+    &.carousel02,
+    &.carousel03,
+    &.carousel04,
+    &.carousel05,
+    &.container07 {
+      background-position: center;
+    }
+  }
+}
+
 @media (max-width: 580px) {
   .titleContent {
     .titleFalcon9 {
@@ -197,6 +204,12 @@
 
   .overviewPosition {
     margin: 0 auto;
+
+    .overview {
+      .darkerText {
+        color: $table-item-mobile;
+      }
+    }
   }
 
   #falcon9Carousel {

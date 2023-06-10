@@ -1,7 +1,12 @@
 // Colors
+$general-text: #ffffff;
+$general-text-shadow: #555;
+
 $link-hover: #b9b9b9;
 $copy-color: #555252;
-$table-item: #b3b3b3;
+
+$table-item: #c0c0c0;
+$table-item-mobile: #eeeeee;
 
 // Padding
 $standard-padding: 20px 0px;
@@ -10,7 +15,9 @@ $button-padding: 15px 0;
 // General
 * {
   font-family: 'D-DIN';
-  color: #ffffff;
+  letter-spacing: 0.03rem;
+  color: $general-text;
+  text-shadow: 0 0 2px $general-text-shadow;
 }
 
 body {
