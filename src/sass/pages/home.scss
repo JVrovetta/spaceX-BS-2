@@ -22,25 +22,23 @@
 
 .titlePadding {
   padding-top: 70vh;
-}
 
-.shortTitle {
-  width: 30rem;
-  margin: 0 0 -1.56rem 0;
-}
+  .topSubtitle {
+    font-size: 20px;
+    font-weight: 400;
+  }
 
-.mediumTitle {
-  width: 40rem;
-  margin: 0 0 -25rem 0;
+  .shortTitle {
+    font-size: 48px;
+    max-width: 480px;
+    margin: 0 0 -25px 0;
+  }
 }
 
 @media (max-width: 750px) {
   .titlePadding {
-    top: 70vh;
-  }
-
-  .shortTitle,
-  .mediumTitle {
-    width: auto;
+    .shortTitle {
+      font-size: 36px;
+    }
   }
 }
